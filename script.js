@@ -11,20 +11,35 @@ $(document).ready(function(){
 
     var typed = new Typed(".typing", {
         strings: ["Web developer","App developer","Freelancer"],
-        typespeed: 0.1,
-        backspeed: 0.01,
+        typespeed: 10,
+        backspeed: 10,
+        backDelay:3000,
+        typeDelay:3000,
         loop: true 
     });
-    var typed = new Typed(".typing2", {
+    var typedd = new Typed(".typing2", {
         strings: ["Web developer","App developer","Freelancer"],
-        typespeed: 100,
+        typespeed: 10,
         backspeed: 10,
+        backDelay:3000,
+        typeDelay:3000,
         loop: true 
     });
 
     // menubar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
+    // $('.menu-btn').click();
 });
+let backdrop = document.querySelector('.backdrop');
+let styleOfBackdrop = getComputedStyle(backdrop);
+
+function hatJa(){
+    $('.navbar .menu').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
+    if(backdrop.classList.contains('none')){
+        backdrop.classList.remove('none');
+        backdrop.classList.add('block');
+    }else if(backdrop.classList.contains('block')){
+        backdrop.classList.remove('block');
+        backdrop.classList.add('none');
+    }
+}

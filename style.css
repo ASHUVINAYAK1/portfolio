@@ -6,6 +6,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 .max-width{
     min-width: 100px;
     padding: 0 80px;
@@ -15,7 +19,7 @@
 .navbar{
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 2001;
     /* background: crimson; */
     padding: 30px 0;
     font-family: 'ubuntu' , sans-serif;
@@ -548,4 +552,27 @@ footer a{
 }
 footer a:hover{
     cursor: pointer;
+}
+
+.backdrop{
+    /* background-color: #fff; */
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2000;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.3s ease;
+}
+
+.block{
+    display: block;
+}
+.none{
+    display: none;
 }
