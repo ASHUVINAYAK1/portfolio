@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    min-width: 100px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    /* background: crimson; */
+    padding: 30px 0;
+    font-family: 'ubuntu' , sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600; 
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+
+}
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* home page styling */
+.home{
+    display: flex;
+    /* background: url("./images/banner.jpg") no-repeat center; */
+    background: black no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'ubuntu' , sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+section{
+    padding: 100px 0;
+}
+.about {
+    font-family: 'poppins', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .about-text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-text .column-left{
+    width: 55%;
+}
+.about .about-text .column-left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-text .column-right{
+    width: 45%;
+}
+
+.about .about-text .column-right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-text .column-right .text span{
+    color: crimson;
+}
+
+.about .about-text .column-right p{
+    text-align: justify;
+}
+.about .about-text .column-right a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;   
+}
+.about .about-text .column-right a:hover{
+    color: crimson;
+    background: none;
+}
+/* services section */
+section{
+    padding: 100px 0;
+}
+.services {
+    font-family: 'poppins', sans-serif;
+    background: black;
+    color: #fff;
+}
+.services .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+
+.services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.services .title::after{
+    content: "what i provide";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.services .services-text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.services .services-text .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.services .services-text .card:hover{
+    background: crimson;
+}
+.services .services-text .card .box{
+    transition: all 0.3s ease;
+}
+.services .services-text .card:hover .box{
+    transform: scale(1.05);
+}
+.services .services-text .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .services-text .card:hover i{
+    color: #fff;
+}
+.services .services-text .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* skills styleing */
+
+section{
+    padding: 100px 0;
+}
+.skills {
+    font-family: 'poppins', sans-serif;
+}
+.skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.skills .title::after{
+    content: "what i know";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.skills .skills-text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.skills .skills-text .column-left{
+    width: calc(50% - 30px);
+}
+.skills .skills-text .column-left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-text .column-left a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;   
+}
+.skills .skills-text .column-left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skills-text .column-right{
+    width: 50%;
+}
+.skills .skills-text .column-right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-text .column-right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-text .column-right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-text .column-right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.skills .skills-text .column-right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills .skills-text .column-right .HTML::before{
+    width: 90%;
+}
+.skills .skills-text .column-right .css::before{
+    width: 70%;
+}
+.skills .skills-text .column-right .javascript::before{
+    width: 30%;
+}
+.skills .skills-text .column-right .react::before{
+    width: 0%;
+}
+.skills .skills-text .column-right .node::before{
+    width: 0%;
+}
+.skills .skills-text .column-right .c::before{
+    width: 80%;
+}
+
+/* contact section  */
+
+section{
+    padding: 100px 0;
+}
+.contact {
+    font-family: 'poppins', sans-serif;
+}
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.contact .title::after{
+    content: "get in touch";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.contact .contact-text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.contact .contact-text .column-left{
+    width: calc(50% - 30px);
+}
+.contact .contact-text .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-text .column-left p{
+    text-align: justify;
+}
+.contact .contact-text .column-left .icons{
+    margin: 10px 0;
+}
+.contact .contact-text .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-text .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-text .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-text .row .info .head{
+    font-weight: 500;
+}
+.contact .contact-text .row .info .sub-title{
+    color: #333;
+}
+.contact .column-right form .feilds{
+    display: flex;
+}
+.contact .column-right{
+    width: 50%;
+}
+.contact .column-right form .feild,
+.contact .column-right form .feilds .feild{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .column-right form .name{
+    margin-right: 10px;
+}
+.contact .column-right form .email{
+    margin-left: 10px;
+}
+.contact .column-right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .column-right form .feild input,
+.contact .column-right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'poppins',sans sans-serif;
+}
+
+.contact .column-right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .column-right form .button{
+    height: 47px;
+    width: 170px;
+    margin-top: 10px;
+
+}
+.contact .column-right form .button button{
+    width: 100%;
+    height: 100%;
+    background: crimson;
+    border: 2px solid crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .column-right form .button button:hover{
+    color: crimson;
+    background: none;
+}
+footer{
+    font-family: 'poppins', sans-serif;   
+    text-align: center;
+    color: #fff;
+    background: black;
+    font-size: 25px;
+}
+footer a{
+    color: crimson;
+}
+footer a:hover{
+    cursor: pointer;
+}
