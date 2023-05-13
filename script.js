@@ -31,15 +31,17 @@ $(document).ready(function(){
 });
 let backdrop = document.querySelector('.backdrop');
 let styleOfBackdrop = getComputedStyle(backdrop);
-
+let menu = document.querySelector('.menu');
 function hatJa(){
-    $('.navbar .menu').toggleClass("active");
-    $('.menu-btn i').toggleClass("active");
-    if(backdrop.classList.contains('none')){
-        backdrop.classList.remove('none');
-        backdrop.classList.add('block');
-    }else if(backdrop.classList.contains('block')){
-        backdrop.classList.remove('block');
-        backdrop.classList.add('none');
+    if(menu.classList.contains('.active')){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+        if(backdrop.classList.contains('none')){
+            backdrop.classList.remove('none');
+            backdrop.classList.add('block');
+        }else if(backdrop.classList.contains('block')){
+            backdrop.classList.remove('block');
+            backdrop.classList.add('none');
+        }
     }
 }
