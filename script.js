@@ -32,8 +32,11 @@ $(document).ready(function(){
 let backdrop = document.querySelector('.backdrop');
 let styleOfBackdrop = getComputedStyle(backdrop);
 let menu = document.querySelector('.menu');
+let w = document.documentElement.clientWidth || window.innerWidth;
+
+
 function hatJa(){
-    if(menu.classList.contains('.active')){
+    if(w<=600){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
         if(backdrop.classList.contains('none')){
