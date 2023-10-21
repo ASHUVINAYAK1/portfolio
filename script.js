@@ -31,15 +31,20 @@ $(document).ready(function(){
 });
 let backdrop = document.querySelector('.backdrop');
 let styleOfBackdrop = getComputedStyle(backdrop);
+let menu = document.querySelector('.menu');
+let w = document.documentElement.clientWidth || window.innerWidth;
+
 
 function hatJa(){
-    $('.navbar .menu').toggleClass("active");
-    $('.menu-btn i').toggleClass("active");
-    if(backdrop.classList.contains('none')){
-        backdrop.classList.remove('none');
-        backdrop.classList.add('block');
-    }else if(backdrop.classList.contains('block')){
-        backdrop.classList.remove('block');
-        backdrop.classList.add('none');
+    if(w<=600){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+        if(backdrop.classList.contains('none')){
+            backdrop.classList.remove('none');
+            backdrop.classList.add('block');
+        }else if(backdrop.classList.contains('block')){
+            backdrop.classList.remove('block');
+            backdrop.classList.add('none');
+        }
     }
 }
