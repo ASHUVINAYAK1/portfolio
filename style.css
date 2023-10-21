@@ -386,19 +386,31 @@ section{
     width: 90%;
 }
 .skills .skills-text .column-right .css::before{
-    width: 70%;
+    width: 90%;
 }
 .skills .skills-text .column-right .javascript::before{
-    width: 30%;
+    width: 70%;
 }
 .skills .skills-text .column-right .react::before{
-    width: 0%;
+    width: 60%;
 }
 .skills .skills-text .column-right .node::before{
-    width: 0%;
+    width: 70%;
+}
+.skills .skills-text .column-right .Express::before{
+    width: 70%;
+}
+.skills .skills-text .column-right .Tailwind::before{
+    width: 50%;
 }
 .skills .skills-text .column-right .c::before{
     width: 80%;
+}
+.skills .skills-text .column-right .python::before{
+    width: 70%;
+}
+.skills .skills-text .column-right .MySQL::before{
+    width: 50%;
 }
 
 /* contact section  */
