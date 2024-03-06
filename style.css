@@ -351,7 +351,8 @@ section{
     background: none;
 }
 .skills .skills-text .column-right{
-    width: 50%;
+    margin-top: 10px;
+    width: 30%;
 }
 .skills .skills-text .column-right .bars{
     margin-bottom: 15px;
